@@ -8,6 +8,7 @@ import BestBooks from "../components/ui/BestBooks";
 
 const BookInfo = ({ books, addItemToCart }) => {
   const { id } = useParams();
+  console.log(param)
   const book = books.find((book) => +book.id === +id);
 
   return (
